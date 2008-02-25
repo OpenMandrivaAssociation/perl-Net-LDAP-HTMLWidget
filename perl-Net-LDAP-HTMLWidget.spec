@@ -6,7 +6,7 @@
 Name:           %{name}
 Version:        %{version}
 Release:        %{release}
-Summary:        Form creation and validation.
+Summary:        Like FromForm but with Net::LDAP and HTML::Widget
 License:        GPL or Artistic
 Group:          Development/Perl
 Url:            http://search.cpan.org/dist/%module/
@@ -19,7 +19,8 @@ BuildArch:      noarch
 BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
-Something like Class::DBI::FromForm / Class::DBI::FromCGI but using HTML::Widget for form creation and validation and DBIx::Class as a ORM.
+Something like Class::DBI::FromForm / Class::DBI::FromCGI but using
+HTML::Widget for form creation and validation and Net::LDAP.
 
 %prep
 %setup -q -n %{module}-%{version}
