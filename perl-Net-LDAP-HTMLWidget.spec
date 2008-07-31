@@ -1,7 +1,7 @@
 %define module      Net-LDAP-HTMLWidget
 %define name        perl-%{module}
 %define version     0.07
-%define release     %mkrel 3
+%define release     %mkrel 4
 
 Name:           %{name}
 Version:        %{version}
