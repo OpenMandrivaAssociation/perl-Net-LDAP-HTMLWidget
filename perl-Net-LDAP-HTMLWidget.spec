@@ -8,7 +8,7 @@ Release:	4
 Summary:	Like FromForm but with Net::LDAP and HTML::Widget
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%upstream_name/
+Url:		https://search.cpan.org/dist/%upstream_name/
 Source0:	http://search.cpan.org/CPAN/authors/id/M/MR/MRAMBERG/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
