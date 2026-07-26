@@ -1,15 +1,13 @@
 %define upstream_name    Net-LDAP-HTMLWidget
-%define upstream_version 0.07
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	5
+Version:	0.07
+Release:	6
 
 Summary:	Like FromForm but with Net::LDAP and HTML::Widget
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Net-LDAP-HTMLWidget
-Source0:	https://cpan.metacpan.org/authors/id/A/AN/ANDREMAR/Net-LDAP-HTMLWidget-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/A/AN/ANDREMAR/Net-LDAP-HTMLWidget-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -21,7 +19,7 @@ Something like Class::DBI::FromForm / Class::DBI::FromCGI but using
 HTML::Widget for form creation and validation and Net::LDAP.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -42,9 +40,7 @@ make test
 %changelog
 * Tue Aug 04 2009 Jérôme Quelin <jquelin@mandriva.org> 0.70.0-1mdv2010.0
 + Revision: 408966
-- rebuild using %%perl_convert_version
-
-* Thu Jul 31 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.07-4mdv2009.0
+- rebuild using %0.07 Thu Jul 31 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.07-4mdv2009.0
 + Revision: 258053
 - rebuild
 
